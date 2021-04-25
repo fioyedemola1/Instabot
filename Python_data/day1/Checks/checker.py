@@ -1,18 +1,19 @@
 from functools import wraps
-
+from typing import Optional,Any
 
 def checks(item):
     def inner(func):
         @wraps(func)
-        def wrapper(value=None,*args):
+        def wrapper(value:Optional[Any]=None,*args):
             if value == None:
-                print(func.__name__, 'has no value')
+                print(f'{func.__name__}, has no value')
                 return 
             print('*' * 10)
             ans = func(value)
             if item != type(ans):
                 print(ans, type(ans))
                 print('Your answer is  incorrect')
+                return
             else:
                 print('Test passed')
             print('*' * 10)
