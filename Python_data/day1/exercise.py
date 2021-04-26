@@ -2,7 +2,7 @@ from Checks.checker import checks
 from typing import Optional,Any
 
 @checks(str)
-def string_checker(args: Optional[Any]=None):
+def string_checker(value: Optional[Any]=None):
     ans = value
     return ans
 
@@ -43,16 +43,22 @@ def set_checker(value: Optional[Any] = None,*args):
 
 # -----------------------------------------------xxxxx Your answers xxxxx---------------->
 
-
+string = 'string'
+string = 'string'
+string = 'string'
+string = 'string'
 
 
 
 
 if __name__ == '__main__':
-    string_checker()             #`string`
+    string_checker(string)             #`string`
+    string_checker(string)             #`string`
+    string_checker(string)             #`string`
+    string_checker(string)             #`string`
     boolean_checker()             #`boolean
     integer_checker()           #`integer
-    List_checker()               #list
-    dictionary_checker()          # Dictionary
-    tuple_checker()               #tuple
-    set_checker()                 #set
+    # List_checker()               #list
+    # dictionary_checker()          # Dictionary
+    # tuple_checker()               #tuple
+    # set_checker()                 #set
