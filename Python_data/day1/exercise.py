@@ -44,18 +44,21 @@ def set_checker(value: Optional[Any] = None,*args):
 # -----------------------------------------------xxxxx Your answers xxxxx---------------->
 
 string = 'string'
-string = 'string'
-string = 'string'
-string = 'string'
+string1 = 'string'
+string2 = 'string'
+string3 = 'string'
+string3 = 'string'
+string3 = 'string'
+string3 = 'string'
 
 
 
 
 if __name__ == '__main__':
     string_checker(string)             #`string`
-    string_checker(string)             #`string`
-    string_checker(string)             #`string`
-    string_checker(string)             #`string`
+    string_checker(string1)             #`string`
+    string_checker(string2)             #`string`
+    string_checker(string3)             #`string`
     boolean_checker()             #`boolean
     integer_checker()           #`integer
     # List_checker()               #list
