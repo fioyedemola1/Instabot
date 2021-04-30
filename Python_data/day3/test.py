@@ -1,0 +1,2 @@
+tutor = 'ade'
+print(tutor)
